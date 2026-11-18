@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AccountContext\Entities\" />
-    <Folder Include="AccountContext\ValueObjects\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Mediator.Abstractions" Version="3.0.2" />
   </ItemGroup>
 
