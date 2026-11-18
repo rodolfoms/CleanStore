@@ -6,4 +6,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanStore.Application\CleanStore.Application.csproj" />
+    <ProjectReference Include="..\CleanStore.Domain\CleanStore.Domain.csproj" />
+    <ProjectReference Include="..\CleanStore.Infrastructure\CleanStore.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

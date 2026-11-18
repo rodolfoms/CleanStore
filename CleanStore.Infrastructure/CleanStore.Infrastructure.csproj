@@ -11,8 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AccountContext\" />
-    <Folder Include="SharedContext\" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+	<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanStore.Application\CleanStore.Application.csproj" />
+	<ProjectReference Include="..\CleanStore.Domain\CleanStore.Domain.csproj" />
   </ItemGroup>
 
 </Project>
