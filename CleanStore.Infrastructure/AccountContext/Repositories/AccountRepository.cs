@@ -20,4 +20,10 @@ public class AccountRepository(AppDbContext context) : IAccountRepository
             .AsNoTracking()
             .Where(specification.Criteria)
             .FirstOrDefaultAsync();
+
+    //public async Task<List<Account>> Get(GetByIdSpecification specification)
+    //    => await context
+    //        .Accounts
+    //        .AsNoTracking()
+    //        .ToList();
 }

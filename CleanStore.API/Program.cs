@@ -23,6 +23,14 @@ app.MapPost("/accounts", async (
     return TypedResults.Created($"accounts/{result.Value.Id}", result);
 });
 
+//app.MapGet("/accounts", async (
+//    ISender sender,
+//    CleanStore.Application.AccountContext.UseCases.Get.Command command) =>
+//{
+//    var result = await sender.Send(command);
+//    return TypedResults.Created($"accounts/", result);
+//});
+
 app.MapGet("/accounts/{id}", async (
     ISender sender,
     Guid id) =>
